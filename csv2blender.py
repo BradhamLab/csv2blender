@@ -9,7 +9,7 @@ def poor_mans_blender(center):
         center (np.array): xyz-center of interest.
     """
     # need to re-orient centers 
-    line = "bpy.ops.mesh.primitive_uv_sphere_add(segments=32, ring_count=16, size=0.5, view_align=False, enter_editmode=False, location=({0},{1},{2}), rotation=(0,0,0), layers=(True,False,False,False,False,False,False,False,False, False,False,False,False,False,False,False,False,False,False,False))"
+    line = "bpy.ops.mesh.primitive_uv_sphere_add(segments=32, ring_count=16, size=6, view_align=False, enter_editmode=False, location=({0},{1},{2}), rotation=(0,0,0), layers=(True,False,False,False,False,False,False,False,False, False,False,False,False,False,False,False,False,False,False,False))"
     return line.format(center[0], center[1], center[2])
 
 
